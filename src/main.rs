@@ -1,18 +1,7 @@
-
 mod palindrome_linked_list;
+mod two_sum;
 
 fn main() {
-    let list = palindrome_linked_list::ListNode {
-        val: 1,
-        next: Option::from(Box::new(palindrome_linked_list::ListNode {
-            val: 2,
-            next: Option::from(Box::new(palindrome_linked_list::ListNode {
-                val: 1,
-                next: None,
-            })),
-        },))
-    };
-
-
-    println!("{}", palindrome_linked_list::is_palindrome(Option::from(Box::new(list))));
+    let result = two_sum::two_sum(vec![1, 2, 3, 4, 5], 5);
+    println!("{} {}", result[0], result[1]);
 }
