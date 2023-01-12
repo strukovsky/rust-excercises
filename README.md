@@ -42,3 +42,9 @@ To iterate from lower to upper digits,
 
 [Task](https://leetcode.com/problems/palindrome-number)
 [Solution](src/palindrome_number.rs)
+
+## Roman to integer
+Quite easy task, no explanations required
+
+[Task](https://leetcode.com/problems/roman-to-integer)  
+[Solution](src/roman_to_integer.rs)
