@@ -27,3 +27,18 @@ so each TreeNode should be a `Rc<RefCell<T>>` instance.
 [Task](https://leetcode.com/problems/binary-tree-inorder-traversal)  
 [Solution](src/binary_tree_inorder_traversal.rs)  
 
+## Palindrome number
+Palindrome number is when iterating a number from end and from start we have the same digits
+Main difficulty is to iterate number in two directions without string or vector usage.
+To iterate from bigger to lower digits,
+
+1. take digit from current position: `digit = number / 10 ** (digit_count - 1)`
+2. go to next iteration `number -= digit * 10 ** digit_count`
+
+To iterate from lower to upper digits,
+
+1. take digit: `digit = number % 10`
+2. go to next iteration `number /= 10`
+
+[Task](https://leetcode.com/problems/palindrome-number)
+[Solution](src/palindrome_number.rs)
