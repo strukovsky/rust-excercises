@@ -9,7 +9,13 @@ mod roman_to_integer;
 mod longest_common_prefix;
 mod valid_parentheses;
 mod search_insert_position;
+mod convert_sorted_array_to_binary_search_tree;
+
 
 fn main() {
-    println!("{}", search_insert_position::search_insert(vec![1, 3], 3));
+    let nums = vec![1, 2, 3, 4, 5, 6];
+    let tree = convert_sorted_array_to_binary_search_tree::sorted_array_to_bst(nums);
+    let a = binary_tree_inorder_traversal::inorder_traversal(tree);
+    let q = vec![1, 2, 3, 4, 5, 6];
+    println!("{}", q == a);
 }

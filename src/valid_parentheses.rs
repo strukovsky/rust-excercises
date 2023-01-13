@@ -1,5 +1,3 @@
-use std::io::read_to_string;
-
 fn get_closing_parenthesis(opening_parenthesis: &char) -> Option<char> {
     match opening_parenthesis {
         '(' => Some(')'),

@@ -107,5 +107,11 @@ When all string is done, return the fact whether stack is empty
 ## Search insert position
 Task requires simple recursion and a lot of is-else branches
 
-[Task](https://leetcode.com/problems/valid-parentheses)  
+[Task](https://leetcode.com/problems/search-insert-position)  
 [Solution](src/search_insert_position.rs)  
+
+## Convert sorted array to binary search tree
+Task is solved with recursion and is completely like previous task
+
+[Task](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)  
+[Solution](src/convert_sorted_array_to_binary_search_tree.rs)  
