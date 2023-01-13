@@ -7,11 +7,8 @@ mod binary_tree_inorder_traversal;
 mod palindrome_number;
 mod roman_to_integer;
 mod longest_common_prefix;
+mod valid_parentheses;
 
 fn main() {
-    let mut vec = Vec::new();
-    vec.push(String::from("reflower"));
-    vec.push(String::from("flow"));
-    vec.push(String::from("flight"));
-    println!("{}", longest_common_prefix::longest_common_prefix(vec));
+    println!("{}", valid_parentheses::is_valid(String::from("}")));
 }

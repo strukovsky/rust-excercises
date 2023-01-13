@@ -85,3 +85,20 @@ This longest key will be longest common prefix
 
 [Task](https://leetcode.com/problems/longest-common-prefix)  
 [Solution](src/longest_common_prefix.rs)  
+
+## Valid parentheses
+
+The idea is quite simple: use `Vec<char>` as a stack where we store opening parentheses.   
+Iterating through the string we match whether symbol is opening or closing parenthesis
+
+If it is opening parenthesis add it to stack
+If it is closing parenthesis:
+1) pop from stack last opening parenthesis
+2) if stack is empty `return false`
+3) find a closing match for this opening parenthesis (like `'('` goes to `')'`, etc)
+4) if closing parenthesis for popped open one isn't the same as current character `return false`
+When all string is done, return the fact whether stack is empty 
+(obviously it should be empty if string is valid: every opening parenthesis was matched with closing)
+
+[Task](https://leetcode.com/problems/valid-parentheses)
+[Solution](src/valid_parentheses.rs)
