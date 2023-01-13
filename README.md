@@ -100,5 +100,12 @@ If it is closing parenthesis:
 When all string is done, return the fact whether stack is empty 
 (obviously it should be empty if string is valid: every opening parenthesis was matched with closing)
 
-[Task](https://leetcode.com/problems/valid-parentheses)
+[Task](https://leetcode.com/problems/valid-parentheses)  
 [Solution](src/valid_parentheses.rs)
+
+
+## Search insert position
+Task requires simple recursion and a lot of is-else branches
+
+[Task](https://leetcode.com/problems/valid-parentheses)  
+[Solution](src/search_insert_position.rs)  

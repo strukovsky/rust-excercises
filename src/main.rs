@@ -8,7 +8,8 @@ mod palindrome_number;
 mod roman_to_integer;
 mod longest_common_prefix;
 mod valid_parentheses;
+mod search_insert_position;
 
 fn main() {
-    println!("{}", valid_parentheses::is_valid(String::from("}")));
+    println!("{}", search_insert_position::search_insert(vec![1, 3], 3));
 }
