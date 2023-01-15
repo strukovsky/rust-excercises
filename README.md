@@ -134,3 +134,16 @@ Task is quite simple no description needed
 
 [Task](https://leetcode.com/problems/majority-element)
 [Solution](src/majority_element.rs)
+
+## Find words that can be formed by characters
+As a hashmap we manage criteria characters.  
+For each character we store count of occurrences in criteria.  
+When iterating through words, each letter of each word can be ether
+1) be in criteria hashmap and there's one more occurrence and this letter "take" this occurrence (decrement in hashmap value)
+2) be in criteria hashmap but all occurrence are taken by previous these letters. Mark this word as bad one
+3) not be in criteria. All this word will be marked as bad  
+
+Once iteration through a single word is done mark it as a good one
+
+[Task](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters)  
+[Solution](src/find_words_that_can_be_formed_by_characters.rs)  

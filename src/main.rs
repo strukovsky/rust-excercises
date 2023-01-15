@@ -12,8 +12,13 @@ mod search_insert_position;
 mod convert_sorted_array_to_binary_search_tree;
 mod first_unique_character_in_a_string;
 mod majority_element;
+mod find_words_that_can_be_formed_by_characters;
 
 
 fn main() {
-    println!("{}", majority_element::majority_element(vec![3, 2, 3]));
+    let result = find_words_that_can_be_formed_by_characters::count_characters(
+        vec![String::from("baba"), String::from("cac")],
+        String::from("aabbcc")
+    );
+    println!("{}", result);
 }
