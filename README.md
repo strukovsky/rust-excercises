@@ -128,3 +128,9 @@ Thus last occurrence index for unique element is the desired one we have to take
 If unique letter `c` will have index `4`, unique letter `l` will have 0, we should output index for `l`, not the `c`, thus they are both unique  
 [Task](https://leetcode.com/problems/first-unique-character-in-a-string)  
 [Solution](src/first_unique_character_in_a_string.rs)  
+
+## Majority Element
+Task is quite simple no description needed
+
+[Task](https://leetcode.com/problems/majority-element)
+[Solution](src/majority_element.rs)

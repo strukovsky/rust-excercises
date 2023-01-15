@@ -11,8 +11,9 @@ mod valid_parentheses;
 mod search_insert_position;
 mod convert_sorted_array_to_binary_search_tree;
 mod first_unique_character_in_a_string;
+mod majority_element;
 
 
 fn main() {
-    println!("{}", first_unique_character_in_a_string::first_uniq_char(String::from("leetcode")));
+    println!("{}", majority_element::majority_element(vec![3, 2, 3]));
 }
