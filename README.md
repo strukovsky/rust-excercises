@@ -115,3 +115,16 @@ Task is solved with recursion and is completely like previous task
 
 [Task](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)  
 [Solution](src/convert_sorted_array_to_binary_search_tree.rs)  
+
+
+## First unique character in a string
+Task requires two hashmap-like arrays (arrays used for memory optimisation)
+We use index of 26-sized array as letter identifier  
+First array is used to storage occurrences count  
+Second is used to storage last occurrence index  
+Thus last occurrence index for unique element is the desired one we have to take this index  
+
+**Note** as soon as we'll iterate through characters, your solution should give the lowest index but not the most first letter's in alphabet index    
+If unique letter `c` will have index `4`, unique letter `l` will have 0, we should output index for `l`, not the `c`, thus they are both unique  
+[Task](https://leetcode.com/problems/first-unique-character-in-a-string)  
+[Solution](src/first_unique_character_in_a_string.rs)  
