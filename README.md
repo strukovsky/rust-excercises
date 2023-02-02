@@ -147,3 +147,9 @@ Once iteration through a single word is done mark it as a good one
 
 [Task](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters)  
 [Solution](src/find_words_that_can_be_formed_by_characters.rs)  
+
+## Verifying an Alien Dictionary
+Use a hashmap to store dictionary and then simple iterate with lexicographical order
+
+[Task](https://leetcode.com/problems/verifying-an-alien-dictionary/)  
+[Solution](src/verifying_an_alien_dictionary.rs)

@@ -13,12 +13,16 @@ mod convert_sorted_array_to_binary_search_tree;
 mod first_unique_character_in_a_string;
 mod majority_element;
 mod find_words_that_can_be_formed_by_characters;
+mod remove_element;
+mod verifying_an_alien_dictionary;
 
 
 fn main() {
-    let result = find_words_that_can_be_formed_by_characters::count_characters(
-        vec![String::from("baba"), String::from("cac")],
-        String::from("aabbcc")
-    );
-    println!("{}", result);
+    let words = vec![
+        String::from("apap"),
+        String::from("app"),
+        // String::from("row"),
+    ];
+    let order = String::from("abcdefghijklmnopqrstuvwxyz");
+    println!("{}", verifying_an_alien_dictionary::is_alien_sorted(words, order))
 }
