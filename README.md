@@ -153,3 +153,8 @@ Use a hashmap to store dictionary and then simple iterate with lexicographical o
 
 [Task](https://leetcode.com/problems/verifying-an-alien-dictionary/)  
 [Solution](src/verifying_an_alien_dictionary.rs)
+
+## Pascal's triangle
+Build a pascal's triangle of given row size
+[Task](https://leetcode.com/problems/pascals-triangle/)
+[Solution](src/pascal_triangle.rs)
