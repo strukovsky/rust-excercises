@@ -158,3 +158,12 @@ Use a hashmap to store dictionary and then simple iterate with lexicographical o
 Build a pascal's triangle of given row size
 [Task](https://leetcode.com/problems/pascals-triangle/)
 [Solution](src/pascal_triangle.rs)
+
+## Is happy
+Use set to define whether there's cycle so number is not happy
+[Task](https://leetcode.com/problems/happy-number/)
+[Solution](src/is_happy.rs)
+
+## Container
+Implement simple uniqueness-checked container
+[Source](src/container.rs)

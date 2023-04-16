@@ -14,14 +14,20 @@ mod first_unique_character_in_a_string;
 mod majority_element;
 mod find_words_that_can_be_formed_by_characters;
 mod pascal_triangle;
+mod find_the_difference;
+mod is_happy;
+mod container;
 
 
 fn main() {
-    let result = pascal_triangle::pascal_triangle(10);
-    for row in result {
-        for element in row {
-            print!("{} ", element);
-        }
-        println!();
+    let mut container: container::Container<i32> = container::Container::new();
+    container.push(10);
+    container.push(10);
+    container.push(10);
+    container.push(20);
+    println!("{}", container.get(0).unwrap());
+    println!("Size {} Unique {}", container.get_size(), container.get_unique_items_count());
+    for item in container.iter() {
+        println!("{}", *item);
     }
 }
