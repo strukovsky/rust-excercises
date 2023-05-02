@@ -1,5 +1,3 @@
-use std::cmp::max;
-
 fn __search_insert(nums: &Vec<i32>, scope_start: usize, scope_end: usize, target: i32) -> usize {
     if scope_end - scope_start == 1 {
         if nums[scope_start] < target && target <= nums[scope_end] {

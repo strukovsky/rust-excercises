@@ -2,7 +2,7 @@ use std::cell::RefCell;
 use std::rc::Rc;
 
 
-use crate::binary_tree_inorder_traversal::TreeNode;
+use crate::algorithms::binary_tree_inorder_traversal::TreeNode;
 
 
 pub fn sorted_array_to_bst(nums: Vec<i32>) -> Option<Rc<RefCell<TreeNode>>> {

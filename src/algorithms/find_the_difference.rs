@@ -1,5 +1,3 @@
-use std::collections::{HashMap};
-
 pub fn find_the_difference(s: String, t: String) -> char {
     let mut s_sum = 0;
     s.chars().for_each(|ch| {s_sum += ch as i32});
