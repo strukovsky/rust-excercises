@@ -13,3 +13,4 @@ mod roman_to_integer;
 mod search_insert_position;
 mod two_sum;
 mod valid_parentheses;
+mod verifying_an_alien_dictionary;
