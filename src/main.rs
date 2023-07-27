@@ -3,10 +3,8 @@ mod structures;
 mod patterns;
 mod stdlib;
 
-use structures::example_box::ExampleBox;
+use stdlib::pointers::simple_demo_rc;
 
 fn main() {
-    let boxed = ExampleBox::new(1);
-    let deref = *boxed;
-    println!("{deref:?}");
+    simple_demo_rc();
 }
