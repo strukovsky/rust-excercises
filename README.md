@@ -6,14 +6,14 @@ Main concept is to revert given list and then compare reverted and original.
 If palindrome, reverted == original
 
 [Task](https://leetcode.com/problems/palindrome-linked-list)  
-[Solution](src/palindrome_linked_list.rs)
+[Solution](src/algorithms/palindrome_linked_list.rs)
 
 ## Two sum
 
 Problem is quite simple, no description required
 
 [Task](https://leetcode.com/problems/two-sum)  
-[Solution](src/two_sum.rs)
+[Solution](src/algorithms/two_sum.rs)
 
 ## Binary tree inorder
 
@@ -25,7 +25,7 @@ so each TreeNode should be a `Rc<RefCell<T>>` instance.
 [Rc](https://doc.rust-lang.org/std/rc/struct.Rc.html)  
 [RefCell](https://doc.rust-lang.org/std/cell/struct.RefCell.html)  
 [Task](https://leetcode.com/problems/binary-tree-inorder-traversal)  
-[Solution](src/binary_tree_inorder_traversal.rs)
+[Solution](src/algorithms/binary_tree_inorder_traversal.rs)
 
 ## Palindrome number
 
@@ -42,14 +42,14 @@ To iterate from lower to upper digits,
 2. go to next iteration `number /= 10`
 
 [Task](https://leetcode.com/problems/palindrome-number)
-[Solution](src/palindrome_number.rs)
+[Solution](src/algorithms/palindrome_number.rs)
 
 ## Roman to integer
 
 Quite easy task, no explanations required
 
 [Task](https://leetcode.com/problems/roman-to-integer)  
-[Solution](src/roman_to_integer.rs)
+[Solution](src/algorithms/roman_to_integer.rs)
 
 ## Longest common prefix
 
@@ -84,7 +84,7 @@ of the pool and then take entry with longest key.
 This longest key will be longest common prefix
 
 [Task](https://leetcode.com/problems/longest-common-prefix)  
-[Solution](src/longest_common_prefix.rs)  
+[Solution](src/algorithms/longest_common_prefix.rs)  
 
 ## Valid parentheses
 
@@ -101,20 +101,20 @@ When all string is done, return the fact whether stack is empty
 (obviously it should be empty if string is valid: every opening parenthesis was matched with closing)
 
 [Task](https://leetcode.com/problems/valid-parentheses)  
-[Solution](src/valid_parentheses.rs)
+[Solution](src/algorithms/valid_parentheses.rs)
 
 
 ## Search insert position
 Task requires simple recursion and a lot of is-else branches
 
 [Task](https://leetcode.com/problems/search-insert-position)  
-[Solution](src/search_insert_position.rs)  
+[Solution](src/algorithms/search_insert_position.rs)  
 
 ## Convert sorted array to binary search tree
 Task is solved with recursion and is completely like previous task
 
 [Task](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)  
-[Solution](src/convert_sorted_array_to_binary_search_tree.rs)  
+[Solution](src/algorithms/convert_sorted_array_to_binary_search_tree.rs)  
 
 
 ## First unique character in a string
@@ -127,13 +127,13 @@ Thus last occurrence index for unique element is the desired one we have to take
 **Note** as soon as we'll iterate through characters, your solution should give the lowest index but not the most first letter's in alphabet index    
 If unique letter `c` will have index `4`, unique letter `l` will have 0, we should output index for `l`, not the `c`, thus they are both unique  
 [Task](https://leetcode.com/problems/first-unique-character-in-a-string)  
-[Solution](src/first_unique_character_in_a_string.rs)  
+[Solution](src/algorithms/first_unique_character_in_a_string.rs)  
 
 ## Majority Element
 Task is quite simple no description needed
 
 [Task](https://leetcode.com/problems/majority-element)
-[Solution](src/majority_element.rs)
+[Solution](src/algorithms/majority_element.rs)
 
 ## Find words that can be formed by characters
 As a hashmap we manage criteria characters.  
@@ -146,24 +146,29 @@ When iterating through words, each letter of each word can be ether
 Once iteration through a single word is done mark it as a good one
 
 [Task](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters)  
-[Solution](src/find_words_that_can_be_formed_by_characters.rs)  
+[Solution](src/algorithms/find_words_that_can_be_formed_by_characters.rs)  
 
 ## Verifying an Alien Dictionary
 Use a hashmap to store dictionary and then simple iterate with lexicographical order
 
 [Task](https://leetcode.com/problems/verifying-an-alien-dictionary/)  
-[Solution](src/verifying_an_alien_dictionary.rs)
+[Solution](src/algorithms/verifying_an_alien_dictionary.rs)
 
 ## Pascal's triangle
 Build a pascal's triangle of given row size
 [Task](https://leetcode.com/problems/pascals-triangle/)
-[Solution](src/pascal_triangle.rs)
+[Solution](src/algorithms/pascal_triangle.rs)
 
 ## Is happy
 Use set to define whether there's cycle so number is not happy
 [Task](https://leetcode.com/problems/happy-number/)
-[Solution](src/is_happy.rs)
+[Solution](src/algorithms/is_happy.rs)
+
+## Determine if String Halves Are Alike
+Simple intuitive solution
+[Task](https://leetcode.com/problems/determine-if-string-halves-are-alike/description/)
+[Solution](src/algorithms/determine_if_string_halves_are_alike.rs)
 
 ## Container
 Implement simple uniqueness-checked container
-[Source](src/container.rs)
+[Source](src/structures/container.rs)
